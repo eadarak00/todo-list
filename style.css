@@ -1,0 +1,155 @@
+/* Général */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  color: #495057;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+/* Titre */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #007bff;
+}
+
+/* Formulaire */
+#task-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#task_input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 60%;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Filtres */
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.filter-btn i {
+  font-size: 1.2rem;
+}
+
+/* Liste des tâches */
+/* Liste des tâches */
+.table {
+  width: 100%;
+  max-width: 800px; /* Limite la largeur maximale du tableau */
+  margin-top: 20px;
+  margin-left: auto; /* Centre le tableau horizontalement */
+  margin-right: auto; /* Centre le tableau horizontalement */
+}
+
+.table thead th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+}
+
+.table tbody td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px; /* Ajoute un peu de padding pour l'espacement */
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+
+.icon-cell button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-cell .fa-pen-to-square {
+  color: #ffc107;
+}
+
+.icon-cell .fa-trash {
+  color: #dc3545;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #007bff;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.modal-footer {
+  border-top: 1px solid #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #task_input {
+    width: 100%;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-btn {
+    margin: 5px 0;
+  }
+}
